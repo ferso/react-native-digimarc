@@ -1,0 +1,3 @@
+rootProject.name = 'demoDigimarc'
+
+include ':app'
