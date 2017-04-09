@@ -35,9 +35,12 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* demoDigimarcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* demoDigimarcTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		667138291E9AD0150045F345 /* ScanViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 667138281E9AD0150045F345 /* ScanViewManager.m */; };
+		6671382C1E9AD07C0045F345 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6671382B1E9AD07C0045F345 /* ScanViewController.m */; };
+		6671382E1E9AD34B0045F345 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6671382D1E9AD34B0045F345 /* ScanViewController.xib */; };
+		667138301E9ADE240045F345 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6671382F1E9ADE240045F345 /* scan.wav */; };
 		66CB600A1E977E2900A50109 /* DMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB60081E977DF100A50109 /* DMSDK.framework */; };
 		66CB600B1E977E2900A50109 /* DMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB60081E977DF100A50109 /* DMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		66CB600F1E979B5B00A50109 /* ScanViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CB600E1E979B5B00A50109 /* ScanViewManager.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -270,9 +273,14 @@
 		2D02E47B1E0B4A5D006451C7 /* demoDigimarc-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demoDigimarc-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* demoDigimarc-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demoDigimarc-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		667138251E9A60800045F345 /* UserCredentials.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCredentials.h; sourceTree = "<group>"; };
+		667138281E9AD0150045F345 /* ScanViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewManager.m; sourceTree = "<group>"; };
+		6671382A1E9AD07C0045F345 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		6671382B1E9AD07C0045F345 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		6671382D1E9AD34B0045F345 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		6671382F1E9ADE240045F345 /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
 		66CB60081E977DF100A50109 /* DMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DMSDK.framework; sourceTree = "<group>"; };
 		66CB600D1E979B5B00A50109 /* ScanViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanViewManager.h; path = demoDigimarc/ScanViewManager.h; sourceTree = "<group>"; };
-		66CB600E1E979B5B00A50109 /* ScanViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScanViewManager.m; path = demoDigimarc/ScanViewManager.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -413,8 +421,13 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				667138251E9A60800045F345 /* UserCredentials.h */,
 				66CB600D1E979B5B00A50109 /* ScanViewManager.h */,
-				66CB600E1E979B5B00A50109 /* ScanViewManager.m */,
+				667138281E9AD0150045F345 /* ScanViewManager.m */,
+				6671382A1E9AD07C0045F345 /* ScanViewController.h */,
+				6671382B1E9AD07C0045F345 /* ScanViewController.m */,
+				6671382D1E9AD34B0045F345 /* ScanViewController.xib */,
+				6671382F1E9ADE240045F345 /* scan.wav */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -876,6 +889,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6671382E1E9AD34B0045F345 /* ScanViewController.xib in Resources */,
+				667138301E9ADE240045F345 /* scan.wav in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -942,8 +957,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CB600F1E979B5B00A50109 /* ScanViewManager.m in Sources */,
+				667138291E9AD0150045F345 /* ScanViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				6671382C1E9AD07C0045F345 /* ScanViewController.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1020,6 +1036,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 7Z6QYLCQ5H;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = demoDigimarcTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1065,6 +1082,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = demoDigimarc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

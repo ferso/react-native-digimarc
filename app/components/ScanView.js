@@ -38,7 +38,7 @@ export default class ScanView extends Component {
         debugger
     }
     render() {
-        return <ScanViewManager {...this.props} onChange={this._onChange}/>;
+        return <ScanViewManager style={{flex: 1, marginTop: 20}} {...this.props} onChange={this._onChange}/>
     }
 }
 
