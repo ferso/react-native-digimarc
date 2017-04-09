@@ -17,6 +17,7 @@
 #import <DMSDK/DMSDK.h>
 //#import "SVWebViewOthersViewController.h"
 #import <MessageUI/MessageUI.h>
+#import "ReactView.h"
 
 #define kSegueOldScanId @"FromScanToOldScan"
 #define kSegueProductDetailId @"FromScanToProduct"
@@ -132,7 +133,9 @@
 - (void)processScannedString {
   // Play sound and vibrate device
   [self playSuccessfulSound];
-  // TODO: call onChange scannedString
+  if ([self.view isKindOfClass:[ReactView class]]) {
+    ((ReactView *)self.view).onChange(@{@"scannedString": _scannedString});
+  }
   
   // Init Old Scan object
 //  SVOldScan *oldScan = [[SVOldScan alloc] init];

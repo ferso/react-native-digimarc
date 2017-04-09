@@ -39,6 +39,7 @@
 		6671382C1E9AD07C0045F345 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6671382B1E9AD07C0045F345 /* ScanViewController.m */; };
 		6671382E1E9AD34B0045F345 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6671382D1E9AD34B0045F345 /* ScanViewController.xib */; };
 		667138301E9ADE240045F345 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6671382F1E9ADE240045F345 /* scan.wav */; };
+		667138331E9AE4090045F345 /* ReactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 667138321E9AE4090045F345 /* ReactView.m */; };
 		66CB600A1E977E2900A50109 /* DMSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB60081E977DF100A50109 /* DMSDK.framework */; };
 		66CB600B1E977E2900A50109 /* DMSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66CB60081E977DF100A50109 /* DMSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -279,6 +280,8 @@
 		6671382B1E9AD07C0045F345 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		6671382D1E9AD34B0045F345 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		6671382F1E9ADE240045F345 /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
+		667138311E9AE4090045F345 /* ReactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactView.h; sourceTree = "<group>"; };
+		667138321E9AE4090045F345 /* ReactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactView.m; sourceTree = "<group>"; };
 		66CB60081E977DF100A50109 /* DMSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DMSDK.framework; sourceTree = "<group>"; };
 		66CB600D1E979B5B00A50109 /* ScanViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScanViewManager.h; path = demoDigimarc/ScanViewManager.h; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -427,6 +430,8 @@
 				6671382A1E9AD07C0045F345 /* ScanViewController.h */,
 				6671382B1E9AD07C0045F345 /* ScanViewController.m */,
 				6671382D1E9AD34B0045F345 /* ScanViewController.xib */,
+				667138311E9AE4090045F345 /* ReactView.h */,
+				667138321E9AE4090045F345 /* ReactView.m */,
 				6671382F1E9ADE240045F345 /* scan.wav */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -957,6 +962,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667138331E9AE4090045F345 /* ReactView.m in Sources */,
 				667138291E9AD0150045F345 /* ScanViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				6671382C1E9AD07C0045F345 /* ScanViewController.m in Sources */,

@@ -9,5 +9,5 @@
 #import <React/RCTViewManager.h>
 
 @interface ScanViewManager : RCTViewManager
-@property (nonatomic, copy) RCTBubblingEventBlock onChange;
+
 @end

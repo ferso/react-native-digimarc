@@ -4,7 +4,6 @@
 //
 
 #import <DMSDK/DMSDK.h>
-#import <React/RCTComponent.h>
 
 @interface ScanViewController : DMSDetectorViewController
 

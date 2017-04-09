@@ -33,9 +33,8 @@ export default class ScanView extends Component {
             ._onChange
             .bind(this);
     }
-    _onChange(event) {
-        console.log(JSON.stringify(event))
-        debugger
+    _onChange(event: Event) {
+        alert(JSON.stringify(event.nativeEvent.scannedString))
     }
     render() {
         return <ScanViewManager style={{flex: 1, marginTop: 20}} {...this.props} onChange={this._onChange}/>
