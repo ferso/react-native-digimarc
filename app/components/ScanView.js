@@ -1,3 +1,50 @@
-import { requireNativeComponent } from 'react-native';
+import React, {Component} from 'react';
+import {
+    AppRegistry,
+    StyleSheet,
+    Text,
+    View,
+    Image,
+    Button,
+} from 'react-native';
 
-module.exports = requireNativeComponent('ScanViewManager', null);
+import {requireNativeComponent} from 'react-native';
+
+const ScanViewManager = requireNativeComponent('ScanView', null);
+
+export default class ScanView extends Component {
+    static navigationOptions = {
+        tabBar: {
+            label: 'Scan',
+            icon: ({tintColor}) => (
+            <Image
+                source={require('../images/scan.png')}
+                style={[
+                styles.icon, {
+                    tintColor: tintColor
+                }
+            ]}/>)
+        }
+    }
+
+    constructor() {
+        super()
+        this._onChange = this
+            ._onChange
+            .bind(this);
+    }
+    _onChange(event) {
+        console.log(JSON.stringify(event))
+        debugger
+    }
+    render() {
+        return <ScanViewManager {...this.props} onChange={this._onChange}/>;
+    }
+}
+
+const styles = StyleSheet.create({
+  icon: {
+    width: 26,
+    height: 26,
+  },
+});

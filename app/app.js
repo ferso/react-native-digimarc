@@ -10,6 +10,8 @@ import {
 
 import {TabNavigator} from 'react-navigation'
 
+import ScanView from './components/ScanView'
+
 class MyHomeScreen extends React.Component {
   static navigationOptions = {
     tabBar: {
@@ -27,31 +29,8 @@ class MyHomeScreen extends React.Component {
   render() {
     return (
       <Button
-        onPress={() => this.props.navigation.navigate('Notifications')}
+        onPress={() => this.props.navigation.navigate('Scan')}
         title="Go to notifications"
-      />
-    );
-  }
-}
-
-class MyNotificationsScreen extends React.Component {
-  static navigationOptions = {
-    tabBar: {
-      label: 'Scan',
-      icon: ({ tintColor }) => (
-        <Image
-          source={require('./images/scan.png')}
-          style={[styles.icon, {tintColor: tintColor}]}
-        />
-      ),
-    },
-  }
-
-  render() {
-    return (
-      <Button
-        onPress={() => this.props.navigation.goBack()}
-        title="Go back home"
       />
     );
   }
@@ -68,9 +47,9 @@ export const App = TabNavigator({
   Home: {
     screen: MyHomeScreen,
   },
-  Notifications: {
-    screen: MyNotificationsScreen,
-  },
+  Scan: {
+    screen: ScanView,
+  }
 }, {
   tabBarOptions: {
     activeTintColor: '#e91e63',

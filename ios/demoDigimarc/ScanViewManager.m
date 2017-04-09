@@ -28,6 +28,13 @@ RCT_EXPORT_MODULE()
   return viewController.view;
 }
 
+- (void)detectorViewControllerDidCancel:(DMSDetectorViewController *)viewController {
+  NSLog(@"cancel");
+}
+
+- (void)detectorViewController:(DMSDetectorViewController *)viewController didReceiveError:(NSError *)error {
+  NSLog(@"error");
+}
 
 -(void)detectorViewController:(DMSDetectorViewController *)viewController resolvedContent:(DMSResolvedContent *)resolvedContent forPayload:(DMSPayload *)payload {
   DMSResolvedContentItem *resolvedContentItem = [resolvedContent.resolvedContentItems firstObject];
